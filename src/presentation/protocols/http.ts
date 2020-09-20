@@ -6,3 +6,7 @@ export interface HttpResponse {
 export interface HttpRequest{
   body?: any
 }
+
+export interface HttpRequestFile {
+  file?: any
+}

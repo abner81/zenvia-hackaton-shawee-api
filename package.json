@@ -6,6 +6,7 @@
     "scripts": {
         "start": "node dist/main/server.js",
         "start:debug": "node --inspect dist/main/server.js",
+        "dev": "ts-node-dev -r tsconfig-paths/register --transpile-only --files --ignore-watch node_modules --respawn src/main/server.ts",
         "build": "rimraf dist && tsc",
         "test": "jest --passWithNoTests --silent --noStackTrace --runInBand",
         "test:verbose": "jest --passWithNoTests --runInBand",
@@ -39,17 +40,17 @@
         "jest": "^26.0.1",
         "lint-staged": "^10.2.6",
         "rimraf": "^3.0.2",
+        "sucrase": "^3.15.0",
         "supertest": "^4.0.2",
         "ts-jest": "^26.0.0",
+        "ts-node-dev": "^1.0.0-pre.62",
         "typescript": "^3.9.3"
     },
     "dependencies": {
-        "bcrypt": "^4.0.1",
+        "@zenvia/sdk": "^1.4.0",
         "express": "^4.17.1",
         "jsonwebtoken": "^8.5.1",
-        "mongo-round": "^1.0.0",
-        "mongodb": "^3.5.7",
-        "nodemon": "^2.0.4",
+        "mongodb": "^3.6.2",
         "validator": "^13.0.0"
     },
     "engines": {
