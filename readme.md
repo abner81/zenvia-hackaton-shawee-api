@@ -18,8 +18,10 @@
 > Esse repositório contém o backend do projeto
 
 </br>
-
 front end[git](https://github.com/SamirisSantos/web)
+
+## ChatBot - Zenvia Flow
+<img src='./fluxo-chatbot.png'>
 
 ## Endpoints
 - [x] /api/user/add => Adiciona usuário na base de dados
