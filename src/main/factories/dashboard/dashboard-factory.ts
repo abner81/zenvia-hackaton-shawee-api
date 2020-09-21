@@ -1,4 +1,4 @@
-import { AddUserRepository } from '../../../infra/db/mongodb/user/add-user-repository'
+import { AddUserRepository } from '../../../infra/db/mongodb/user/user-repository'
 import { DashboardRepository } from '../../../infra/zenvia/dashboard/dashboard-repository'
 import { DashboardController } from '../../../presentation/controllers/dashboard/dashboard-controller'
 import { Controller } from '../../../presentation/protocols'

@@ -12,4 +12,11 @@ export class AddUserRepository implements AddUser {
     const res = await MongoHelper.map(req.ops[0])
     return res
   }
+
+  async get(): Promise<any> {
+    const collection = await MongoHelper.getCollection('users')
+    const res = await collection.find()
+    console.log(res)
+    return res
+  }
 }
